@@ -3,26 +3,44 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="./support.js"></script>
-</head>
-<body>
-<x-dc>
-<helmet>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Licenciamento, transferência, débitos e CNH em Franca e região, com atendimento humano pelo WhatsApp. Júnior Mamede Despachante, desde 1987. R. Luís Píres, 509 – Jardim Redentor.">
 <title>Despachante em Franca-SP desde 1987 | Júnior Mamede Despachante</title>
+<meta name="description" content="Licenciamento, transferência, débitos e CNH em Franca e região, com atendimento humano pelo WhatsApp. Júnior Mamede Despachante, desde 1987. R. Luís Píres, 509 – Jardim Redentor.">
+<link rel="canonical" href="https://junior-mamede-despachante-lp-escuro.vercel.app/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Júnior Mamede Despachante">
+<meta property="og:title" content="Despachante em Franca-SP desde 1987 | Júnior Mamede Despachante">
+<meta property="og:description" content="Licenciamento, transferência, débitos e CNH em Franca e região, com atendimento humano pelo WhatsApp. Júnior Mamede Despachante, desde 1987. R. Luís Píres, 509 – Jardim Redentor.">
+<meta property="og:url" content="https://junior-mamede-despachante-lp-escuro.vercel.app/">
+<meta property="og:image" content="https://junior-mamede-despachante-lp-escuro.vercel.app/assets/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Júnior Mamede Despachante — despachante em Franca-SP desde 1987">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Despachante em Franca-SP desde 1987 | Júnior Mamede Despachante">
+<meta name="twitter:description" content="Licenciamento, transferência, débitos e CNH em Franca e região, com atendimento humano pelo WhatsApp. Júnior Mamede Despachante, desde 1987. R. Luís Píres, 509 – Jardim Redentor.">
+<meta name="twitter:image" content="https://junior-mamede-despachante-lp-escuro.vercel.app/assets/og-image.jpg">
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
 <link rel="icon" type="image/png" sizes="512x512" href="assets/favicon-512.png">
 <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon-180.png">
 <meta name="theme-color" content="#07090C">
+<style>x-dc{display:none!important}</style>
+<script src="vendor/react.production.min.js" defer></script>
+<script src="vendor/react-dom.production.min.js" defer></script>
+<script src="vendor/gsap.min.js" defer></script>
+<script src="vendor/ScrollTrigger.min.js" defer></script>
+<script src="vendor/SplitText.min.js" defer></script>
+<script src="vendor/lenis.min.js" defer></script>
+<script src="./support.js" defer></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
-<script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
 <style>
 html,body{margin:0;background:#07090C;font-family:Manrope,system-ui,sans-serif;color:#F2F5F8;-webkit-font-smoothing:antialiased;text-wrap:pretty}
 *{box-sizing:border-box}
@@ -34,6 +52,9 @@ details[open] [data-chev]{transform:rotate(45deg);background:#55A2DE!important;c
 input::placeholder{color:#B4BAC2;opacity:1}
 [data-plate]:focus-within{box-shadow:0 0 0 4px rgba(85,162,222,.45),0 0 60px -10px rgba(85,162,222,.7)!important}
 @media (min-width:480px){[data-h1]{white-space:nowrap}}
+[data-chat-send]:focus-visible,[data-plate-go]:focus-visible{outline:2px solid #55A2DE;outline-offset:3px}
+[data-chat-send]:hover [data-send-dot]{transform:scale(1.08)}
+@media (max-width:1023px){[data-r~="parc-lines"]{display:none!important}}
 @media (max-width:1000px){
 [data-r~="g2"],[data-r~="svc-grid"],[data-r~="como"],[data-r~="cta"],[data-r~="faq"],[data-r~="win"]{grid-template-columns:1fr!important}
 [data-r~="hide-m"],[data-r~="nav-links"]{display:none!important}
@@ -60,7 +81,9 @@ input::placeholder{color:#B4BAC2;opacity:1}
 [data-r~="foot-in"]{padding:36px 22px 22px!important;border-radius:26px!important}
 [data-r~="shot"]{display:flex;flex-direction:column}
 [data-r~="cars"]{position:relative!important;left:auto!important;bottom:auto!important;order:2;width:min(92%,520px)!important;margin:-40px auto 0!important}
-[data-r~="hthread"]{padding-bottom:60px!important}
+[data-r~="hthread"]{padding-bottom:120px!important}
+[data-r~="win"]{--fa:170px;--fb:70px}
+[data-r~="quote"]{font-size:32px!important}
 body{padding-bottom:88px}
 }
 @media (max-width:640px){
@@ -70,6 +93,8 @@ body{padding-bottom:88px}
 [data-r~="plate-row"]{flex-direction:column!important;align-items:stretch!important}
 [data-r~="plate"]{flex-basis:auto!important;width:100%!important}
 [data-r~="plate-in"]{font-size:38px!important}
+[data-r~="plate-go"]{margin-top:0!important}
+[data-r~="quote"]{font-size:26px!important}
 [data-r~="stat-num"]{font-size:36px!important}
 [data-r~="draft-btn"]{align-self:stretch!important;justify-content:center}
 [data-r~="btns"]{flex-direction:column!important;align-items:stretch!important}
@@ -126,10 +151,9 @@ body{padding-bottom:88px}
 </div>
 <div data-shot data-r="shot" style="position:relative;max-width:1100px;margin:64px auto 0;padding-bottom:72px;perspective:1400px">
 <div aria-hidden="true" style="position:absolute;z-index:2;left:50%;bottom:20px;width:980px;height:140px;margin-left:-490px;border-radius:50%;background:radial-gradient(closest-side,rgba(85,162,222,.28),rgba(85,162,222,0));pointer-events:none"></div>
-<div aria-hidden="true" style="position:absolute;z-index:2;left:50%;bottom:38px;width:780px;height:96px;margin-left:-390px;border-radius:50%;background:radial-gradient(closest-side,rgba(0,0,0,.7),rgba(0,0,0,0));pointer-events:none"></div>
-<img data-cars data-r="cars" src="assets/carros.png" alt="" aria-hidden="true" style="position:absolute;z-index:3;left:50%;bottom:66px;width:680px;margin-left:-340px;height:auto;pointer-events:none;filter:drop-shadow(0 24px 30px rgba(0,0,0,.6)) brightness(.95)">
+<div data-cars data-r="cars" aria-hidden="true" style="position:absolute;z-index:3;left:50%;bottom:66px;width:680px;margin-left:-340px;pointer-events:none"><span style="position:absolute;left:5%;right:3%;top:69%;height:19%;border-radius:50%;background:radial-gradient(closest-side,rgba(0,0,0,.8),rgba(0,0,0,0));transform:rotate(4.6deg);filter:blur(5px)"></span><img src="assets/carros.png" alt="" style="position:relative;display:block;width:100%;height:auto;filter:brightness(.95)"></div>
 <div aria-hidden="true" style="position:absolute;left:50%;top:0;width:760px;height:380px;margin-left:-380px;border-radius:50%;background:radial-gradient(closest-side,rgba(85,162,222,.45),rgba(85,162,222,0));filter:blur(30px)"></div>
-<div data-tilt data-r="win" style="position:relative;max-width:900px;margin:0 auto;transform:rotateX(16deg);transform-origin:50% 0%;border-radius:22px 22px 0 0;border:1px solid transparent;border-bottom:0;background:linear-gradient(#0D1116,#0D1116) padding-box,linear-gradient(180deg,rgba(255,255,255,.22),rgba(255,255,255,.04)) border-box;box-shadow:0 -30px 90px -30px rgba(85,162,222,.5);overflow:hidden;display:grid;grid-template-columns:270px minmax(0,1fr);text-align:left">
+<div data-tilt data-r="win" style="position:relative;max-width:900px;margin:0 auto;transform:rotateX(16deg);transform-origin:50% 0%;border-radius:22px 22px 0 0;border:1px solid transparent;border-bottom:0;background:linear-gradient(#0D1116,#0D1116) padding-box,linear-gradient(180deg,rgba(255,255,255,.22),rgba(255,255,255,.04)) border-box;box-shadow:0 -30px 90px -30px rgba(85,162,222,.5);overflow:hidden;display:grid;grid-template-columns:270px minmax(0,1fr);text-align:left;-webkit-mask-image:linear-gradient(180deg,#000 calc(100% - var(--fa,300px)),transparent calc(100% - var(--fb,110px)));mask-image:linear-gradient(180deg,#000 calc(100% - var(--fa,300px)),transparent calc(100% - var(--fb,110px)))">
 <div data-r="hide-m" style="grid-column:1 / -1;display:flex;align-items:center;gap:8px;padding:12px 16px;border-bottom:1px solid rgba(255,255,255,.07)"><span style="width:10px;height:10px;border-radius:50%;background:#2A323C"></span><span style="width:10px;height:10px;border-radius:50%;background:#2A323C"></span><span style="width:10px;height:10px;border-radius:50%;background:#2A323C"></span><span style="margin-left:auto;margin-right:auto;width:220px;height:22px;border-radius:999px;background:#161B22"></span></div>
 <div data-r="hide-m" style="border-right:1px solid rgba(255,255,255,.07);padding:10px">
 <div style="display:flex;gap:10px;align-items:center;padding:10px;border-radius:12px;background:rgba(85,162,222,.1);border:1px solid rgba(85,162,222,.25)"><span style="flex:0 0 36px;width:36px;height:36px;border-radius:50%;background:#050608;display:grid;place-items:center;border:1px solid rgba(255,255,255,.1)"><img src="assets/simbolo-jm-negativo.svg" alt="" style="width:22px;height:auto"></span><div style="min-width:0"><div style="font-size:13px;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">Júnior Mamede Despachante</div><div style="font-size:12px;color:#9AA6B4;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">Pronto, licenciamento feito ✓</div></div></div>
@@ -147,7 +171,6 @@ body{padding-bottom:88px}
 </div>
 </div>
 </div>
-<div aria-hidden="true" style="position:absolute;left:0;right:0;bottom:0;height:160px;background:linear-gradient(180deg,rgba(7,9,12,0),#07090C)"></div>
 </div>
 </div>
 </div>
@@ -345,7 +368,7 @@ body{padding-bottom:88px}
 <div aria-hidden="true" style="position:absolute;left:50%;bottom:-50px;width:760px;height:150px;margin-left:-380px;border-radius:50%;background:radial-gradient(closest-side,rgba(85,162,222,.38),rgba(85,162,222,0));pointer-events:none"></div>
 <div role="group" aria-roledescription="slide" aria-label="1 de 4" data-r="slide" onClick="{{ car.g0 }}" style="position:absolute;left:50%;top:0;width:520px;height:100%;border-radius:28px;overflow:hidden;cursor:pointer;transform:{{ car.t0 }};z-index:{{ car.z0 }};opacity:{{ car.o0 }};pointer-events:{{ car.p0 }};transition:transform .8s cubic-bezier(.2,.7,.2,1),opacity .8s;box-shadow:0 50px 90px -40px rgba(0,0,0,.85);background:#11161C;border:1px solid rgba(255,255,255,.1)"><img src="assets/balcao.jpg" alt="Balcão de atendimento da Júnior Mamede Despachante, em Franca-SP" loading="lazy" draggable="false" style="position:absolute;left:0;top:0;width:118%;height:100%;object-fit:cover;object-position:0% 60%;user-select:none;filter:saturate(.9) brightness(.94)"></div>
 <div role="group" aria-roledescription="slide" aria-label="2 de 4" data-r="slide" onClick="{{ car.g1 }}" style="position:absolute;left:50%;top:0;width:520px;height:100%;border-radius:28px;overflow:hidden;cursor:pointer;transform:{{ car.t1 }};z-index:{{ car.z1 }};opacity:{{ car.o1 }};pointer-events:{{ car.p1 }};transition:transform .8s cubic-bezier(.2,.7,.2,1),opacity .8s;box-shadow:0 50px 90px -40px rgba(0,0,0,.85);background:#11161C;border:1px solid rgba(255,255,255,.1)"><img src="assets/fachada.jpg" alt="Fachada da Júnior Mamede Despachante em Franca-SP, com o letreiro Desde 1987" loading="lazy" draggable="false" style="position:absolute;left:0;top:0;width:100%;height:100%;object-fit:cover;object-position:50% 30%;user-select:none;filter:saturate(.9) brightness(.94)"></div>
-<div role="group" aria-roledescription="slide" aria-label="3 de 4" data-r="slide" onClick="{{ car.g2 }}" style="position:absolute;left:50%;top:0;width:520px;height:100%;border-radius:28px;overflow:hidden;cursor:pointer;transform:{{ car.t2 }};z-index:{{ car.z2 }};opacity:{{ car.o2 }};pointer-events:{{ car.p2 }};transition:transform .8s cubic-bezier(.2,.7,.2,1),opacity .8s;box-shadow:0 50px 90px -40px rgba(0,0,0,.85);background:linear-gradient(135deg,#6CB2E8,#55A2DE 50%,#3F8ED0)"><div aria-hidden="true" style="position:absolute;inset:0;background-image:url(assets/grain.png);background-size:256px 256px;mix-blend-mode:overlay;opacity:.5"></div><div style="position:relative;height:100%;padding:36px;display:flex;flex-direction:column;justify-content:space-between"><img src="assets/simbolo-jm-branco.svg" alt="Símbolo JM da Júnior Mamede Despachante" style="height:30px;width:auto;align-self:flex-start"><p style="margin:0;font-size:40px;font-weight:700;letter-spacing:-.035em;line-height:1.15;color:#07090C">Do outro lado do WhatsApp, <span style="background:#07090C;color:#8CC6F2;padding:0 .14em;border-radius:.16em;-webkit-box-decoration-break:clone;box-decoration-break:clone">tem gente</span>.</p></div></div>
+<div role="group" aria-roledescription="slide" aria-label="3 de 4" data-r="slide" onClick="{{ car.g2 }}" style="position:absolute;left:50%;top:0;width:520px;height:100%;border-radius:28px;overflow:hidden;cursor:pointer;transform:{{ car.t2 }};z-index:{{ car.z2 }};opacity:{{ car.o2 }};pointer-events:{{ car.p2 }};transition:transform .8s cubic-bezier(.2,.7,.2,1),opacity .8s;box-shadow:0 50px 90px -40px rgba(0,0,0,.85);background:linear-gradient(135deg,#6CB2E8,#55A2DE 50%,#3F8ED0)"><div aria-hidden="true" style="position:absolute;inset:0;background-image:url(assets/grain.png);background-size:256px 256px;mix-blend-mode:overlay;opacity:.5"></div><div style="position:relative;height:100%;padding:36px;display:flex;flex-direction:column;justify-content:space-between"><img src="assets/simbolo-jm-branco.svg" alt="Símbolo JM da Júnior Mamede Despachante" style="height:30px;width:auto;align-self:flex-start"><p data-r="quote" style="margin:0;font-size:36px;font-weight:700;letter-spacing:-.035em;line-height:1.15;color:#07090C">Quem responde no WhatsApp é quem te atende <span style="white-space:nowrap;background:#07090C;color:#8CC6F2;padding:0 .14em;border-radius:.16em;-webkit-box-decoration-break:clone;box-decoration-break:clone">no balcão</span>.</p></div></div>
 <div role="group" aria-roledescription="slide" aria-label="4 de 4" data-r="slide" onClick="{{ car.g3 }}" style="position:absolute;left:50%;top:0;width:520px;height:100%;border-radius:28px;overflow:hidden;cursor:pointer;transform:{{ car.t3 }};z-index:{{ car.z3 }};opacity:{{ car.o3 }};pointer-events:{{ car.p3 }};transition:transform .8s cubic-bezier(.2,.7,.2,1),opacity .8s;box-shadow:0 50px 90px -40px rgba(0,0,0,.85);background:#11161C;border:1px solid rgba(255,255,255,.1)"><img src="assets/parede-logo.jpg" alt="Parede com o logo da Júnior Mamede Despachante, na loja em Franca-SP" loading="lazy" draggable="false" style="position:absolute;left:0;top:0;width:100%;height:100%;object-fit:cover;object-position:50% 42%;user-select:none;filter:saturate(.9) brightness(.94)"></div>
 </div>
 <div style="display:flex;align-items:center;justify-content:center;gap:18px;margin-top:34px">
@@ -374,7 +397,7 @@ body{padding-bottom:88px}
 <section data-screen-label="06 Parcelamento" data-r="pad sec" style="position:relative;padding:112px 40px 0">
 <div data-panel data-r="g2 panel" style="position:relative;overflow:hidden;max-width:1200px;margin:0 auto;background:linear-gradient(135deg,#72B6EA 0%,#55A2DE 45%,#3A89CC 100%);color:#07090C;border-radius:32px;padding:56px 64px;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:48px;align-items:center;box-shadow:0 50px 120px -50px rgba(85,162,222,.8)">
 <div aria-hidden="true" style="position:absolute;inset:0;background-image:url(assets/grain.png);background-size:256px 256px;mix-blend-mode:overlay;opacity:.55;pointer-events:none"></div>
-<div aria-hidden="true" style="position:absolute;right:-40px;top:40px;display:flex;flex-direction:column;align-items:flex-end;gap:14px;width:52%;opacity:.22;pointer-events:none">
+<div aria-hidden="true" data-r="parc-lines" style="position:absolute;right:-40px;top:40px;display:flex;flex-direction:column;align-items:flex-end;gap:14px;width:52%;opacity:.22;pointer-events:none">
 <span style="display:block;height:10px;width:100%;background:#07090C;clip-path:polygon(0 42%,100% 0,100% 100%,0 58%)"></span>
 <span style="display:block;height:10px;width:74%;background:#07090C;clip-path:polygon(0 42%,100% 0,100% 100%,0 58%)"></span>
 <span style="display:block;height:10px;width:50%;background:#07090C;clip-path:polygon(0 42%,100% 0,100% 100%,0 58%)"></span>
@@ -384,12 +407,12 @@ body{padding-bottom:88px}
 <p style="margin:0 0 28px;font-size:17px;line-height:1.6;font-weight:500;max-width:540px">Os débitos do seu veículo podem ser parcelados no cartão de crédito. Manda a placa e a gente te mostra as condições para o seu caso.</p>
 <a data-mag href="{{ wa.debitos }}" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;background:#07090C;color:#fff;border-radius:999px;padding:16px 24px;font-size:16px;font-weight:700;text-decoration:none;min-height:54px;white-space:nowrap" style-hover="background:#fff;color:#07090C">Consultar parcelamento ↗</a>
 </div>
-<div data-parc-card aria-hidden="true" style="position:relative;background:#0D1116;color:#F2F5F8;border-radius:24px;overflow:hidden;border:1px solid rgba(255,255,255,.12);box-shadow:0 40px 80px -30px rgba(7,9,12,.8)">
-<div style="display:flex;align-items:center;gap:12px;padding:14px 18px;border-bottom:1px solid rgba(255,255,255,.07)"><span style="flex:0 0 34px;width:34px;height:34px;border-radius:50%;background:#050608;display:grid;place-items:center;border:1px solid rgba(255,255,255,.1)"><img src="assets/simbolo-jm-negativo.svg" alt="" style="width:22px;height:auto"></span><div><div style="font-size:14px;font-weight:700">Júnior Mamede Despachante</div><div style="font-size:12px;color:#9AA6B4">WhatsApp (16) 99319-4949</div></div></div>
-<div style="padding:22px 18px;display:flex;flex-direction:column;gap:10px;min-height:150px;justify-content:flex-end">
+<div data-parc-card style="position:relative;background:#0D1116;color:#F2F5F8;border-radius:24px;overflow:hidden;border:1px solid rgba(255,255,255,.12);box-shadow:0 40px 80px -30px rgba(7,9,12,.8)">
+<div aria-hidden="true" style="display:flex;align-items:center;gap:12px;padding:14px 18px;border-bottom:1px solid rgba(255,255,255,.07)"><span style="flex:0 0 34px;width:34px;height:34px;border-radius:50%;background:#050608;display:grid;place-items:center;border:1px solid rgba(255,255,255,.1)"><img src="assets/simbolo-jm-negativo.svg" alt="" style="width:22px;height:auto"></span><div><div style="font-size:14px;font-weight:700">Júnior Mamede Despachante</div><div style="font-size:12px;color:#9AA6B4">WhatsApp (16) 99319-4949</div></div></div>
+<div aria-hidden="true" style="padding:22px 18px;display:flex;flex-direction:column;gap:10px;min-height:150px;justify-content:flex-end">
 <div style="align-self:flex-end;background:linear-gradient(135deg,#6CB2E8,#55A2DE 55%,#3F8ED0);color:#07090C;font-weight:500;border-radius:18px 18px 6px 18px;padding:11px 14px;max-width:86%;font-size:15px;line-height:1.45">Olá! Quero consultar o parcelamento dos débitos do meu veículo. Minha placa é: ABC1D23</div>
 </div>
-<div style="display:flex;align-items:center;gap:10px;padding:12px 14px;border-top:1px solid rgba(255,255,255,.07)"><span style="flex:1;height:40px;border-radius:999px;background:#07090C;border:1px solid rgba(255,255,255,.08)"></span><span style="flex:0 0 40px;width:40px;height:40px;border-radius:50%;background:#55A2DE;display:grid;place-items:center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#07090C" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span></div>
+<a data-chat-send href="{{ wa.debitos }}" target="_blank" rel="noopener" aria-label="Consultar o parcelamento dos débitos no WhatsApp" style="display:flex;align-items:center;gap:10px;padding:12px 14px;min-height:64px;border-top:1px solid rgba(255,255,255,.07);text-decoration:none;color:inherit;cursor:pointer"><span style="flex:1;height:40px;border-radius:999px;background:#07090C;border:1px solid rgba(255,255,255,.08)"></span><span data-send-dot aria-hidden="true" style="flex:0 0 40px;width:40px;height:40px;border-radius:50%;background:#55A2DE;display:grid;place-items:center;min-width:44px;min-height:44px;transition:transform .2s"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#07090C" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span></a>
 </div>
 </div>
 </section>
@@ -443,12 +466,14 @@ body{padding-bottom:88px}
 <div>
 <h2 data-r="h2" style="margin:0 0 14px;font-size:54px;font-weight:700;letter-spacing:-.04em;line-height:1.08">Seu carro em dia começa com <span style="color:#55A2DE;text-shadow:0 0 36px rgba(85,162,222,.6)">uma mensagem</span>.</h2>
 <p style="margin:0;font-size:18px;line-height:1.6;color:#9AA6B4">Manda a placa. A gente resolve o resto.</p>
-<form data-r="plate-row" onSubmit="{{ enviarPlaca }}" style="display:flex;align-items:center;gap:12px;margin-top:30px;flex-wrap:wrap">
-<label data-plate data-r="plate" style="flex:0 0 300px;display:block;background:#fff;border-radius:16px;overflow:hidden;cursor:text;box-shadow:0 0 0 1px rgba(255,255,255,.2),0 20px 60px -10px rgba(85,162,222,.55);transition:box-shadow .2s">
+<form data-r="plate-row" onSubmit="{{ enviarPlaca }}" style="display:flex;align-items:flex-start;gap:12px;margin-top:30px;flex-wrap:wrap">
+<div data-r="plate" style="flex:0 0 300px;display:flex;flex-direction:column;gap:8px"><label data-plate style="display:block;background:#fff;border-radius:16px;overflow:hidden;cursor:text;box-shadow:0 0 0 1px rgba(255,255,255,.2),0 20px 60px -10px rgba(85,162,222,.55);transition:box-shadow .2s">
 <span style="display:block;background:#55A2DE;color:#07090C;text-align:center;font-size:11px;font-weight:800;letter-spacing:.34em;padding:6px 0 5px">PLACA</span>
-<input data-r="plate-in" value="{{ placa }}" onChange="{{ onPlaca }}" placeholder="ABC1D23" maxLength="7" autoComplete="off" autoCapitalize="characters" spellCheck="false" aria-label="Placa do veículo" style="display:block;width:100%;border:0;outline:0;background:transparent;text-align:center;font-family:Manrope,sans-serif;font-size:40px;font-weight:800;letter-spacing:.1em;color:#07090C;padding:6px 12px 10px;text-transform:uppercase;font-variant-numeric:tabular-nums">
+<input data-r="plate-in" value="{{ placa }}" onChange="{{ onPlaca }}" placeholder="ABC1D23" autoComplete="off" autoCapitalize="characters" spellCheck="false" aria-label="Placa do veículo" aria-invalid="{{ placaInv }}" aria-describedby="placa-erro" style="display:block;width:100%;border:0;outline:0;background:transparent;text-align:center;font-family:Manrope,sans-serif;font-size:40px;font-weight:800;letter-spacing:.1em;color:#07090C;padding:6px 12px 10px;text-transform:uppercase;font-variant-numeric:tabular-nums">
 </label>
-<button type="submit" data-mag style="border:0;cursor:pointer;font-family:Manrope,sans-serif;display:inline-flex;align-items:center;justify-content:center;background:#55A2DE;color:#07090C;border-radius:999px;padding:18px 26px;font-size:16px;font-weight:700;min-height:58px;white-space:nowrap;box-shadow:0 0 0 1px rgba(85,162,222,.5),0 14px 44px -10px rgba(85,162,222,.8)" style-hover="background:#7DBBEA">Consultar no WhatsApp ↗</button>
+<sc-if value="{{ placaErro }}"><p id="placa-erro" role="alert" style="margin:0;font-size:14px;font-weight:600;line-height:1.4;color:#FF8A80">Confira a placa: são 7 letras e números, como ABC1D23</p></sc-if>
+</div>
+<a data-mag data-plate-go data-r="plate-go" href="{{ waPlaca }}" target="_blank" rel="noopener" onClick="{{ checaPlaca }}" style="font-family:Manrope,sans-serif;display:inline-flex;align-items:center;justify-content:center;background:#55A2DE;color:#07090C;border-radius:999px;padding:18px 26px;font-size:16px;font-weight:700;min-height:58px;white-space:nowrap;box-shadow:0 0 0 1px rgba(85,162,222,.5),0 14px 44px -10px rgba(85,162,222,.8);text-decoration:none;margin-top:15px" style-hover="background:#7DBBEA">Consultar no WhatsApp ↗</a>
 </form>
 <p style="margin:14px 0 0;font-size:14px;line-height:1.5;color:#9AA6B4">Sua placa vai direto pro WhatsApp — o site não guarda nada.</p>
 <div style="height:1px;background:linear-gradient(90deg,rgba(85,162,222,.5),rgba(255,255,255,.06));margin:28px 0 24px"></div>
@@ -457,12 +482,12 @@ body{padding-bottom:88px}
 <p style="margin:0;font-size:14px;line-height:1.7;color:#9AA6B4;max-width:440px">WhatsApp (16) 99319-4949 · Telefone (16) 3703-0387 · R. Luís Píres, 509 – Jardim Redentor, Franca-SP, 14409-283</p>
 </div>
 </div>
-<div aria-hidden="true" style="width:100%;max-width:440px;justify-self:center;border:1px solid transparent;background:linear-gradient(#0D1116,#0D1116) padding-box,linear-gradient(180deg,rgba(85,162,222,.6),rgba(255,255,255,.04)) border-box;border-radius:28px;overflow:hidden;box-shadow:0 40px 100px -40px rgba(85,162,222,.6)">
-<div style="display:flex;align-items:center;gap:12px;padding:16px 20px;border-bottom:1px solid rgba(255,255,255,.07)"><span style="flex:0 0 40px;width:40px;height:40px;border-radius:50%;background:#050608;display:grid;place-items:center;border:1px solid rgba(255,255,255,.1)"><img src="assets/simbolo-jm-negativo.svg" alt="" style="width:26px;height:auto"></span><div><div style="font-size:15px;font-weight:700">Júnior Mamede Despachante</div><div style="display:flex;align-items:center;gap:6px;font-size:12px;color:#9AA6B4"><span style="width:7px;height:7px;border-radius:50%;background:#55A2DE;box-shadow:0 0 8px #55A2DE"></span>WhatsApp (16) 99319-4949</div></div></div>
-<div style="padding:26px 20px;min-height:220px;display:flex;flex-direction:column;justify-content:flex-end">
+<div style="width:100%;max-width:440px;justify-self:center;border:1px solid transparent;background:linear-gradient(#0D1116,#0D1116) padding-box,linear-gradient(180deg,rgba(85,162,222,.6),rgba(255,255,255,.04)) border-box;border-radius:28px;overflow:hidden;box-shadow:0 40px 100px -40px rgba(85,162,222,.6)">
+<div aria-hidden="true" style="display:flex;align-items:center;gap:12px;padding:16px 20px;border-bottom:1px solid rgba(255,255,255,.07)"><span style="flex:0 0 40px;width:40px;height:40px;border-radius:50%;background:#050608;display:grid;place-items:center;border:1px solid rgba(255,255,255,.1)"><img src="assets/simbolo-jm-negativo.svg" alt="" style="width:26px;height:auto"></span><div><div style="font-size:15px;font-weight:700">Júnior Mamede Despachante</div><div style="display:flex;align-items:center;gap:6px;font-size:12px;color:#9AA6B4"><span style="width:7px;height:7px;border-radius:50%;background:#55A2DE;box-shadow:0 0 8px #55A2DE"></span>WhatsApp (16) 99319-4949</div></div></div>
+<div aria-hidden="true" style="padding:26px 20px;min-height:220px;display:flex;flex-direction:column;justify-content:flex-end">
 <div style="align-self:flex-end;background:linear-gradient(135deg,#6CB2E8,#55A2DE 55%,#3F8ED0);color:#07090C;font-weight:500;border-radius:18px 18px 6px 18px;padding:12px 15px;max-width:88%;font-size:15px;line-height:1.5;box-shadow:0 12px 34px -12px rgba(85,162,222,.8)">Olá! Vim pelo site e quero ajuda com o documento do meu carro. Minha placa é: <span style="font-weight:800;letter-spacing:.06em;color:{{ placaCor }}">{{ placaView }}</span></div>
 </div>
-<div style="display:flex;align-items:center;gap:10px;padding:12px 14px;border-top:1px solid rgba(255,255,255,.07)"><span style="flex:1;height:40px;border-radius:999px;background:#07090C;border:1px solid rgba(255,255,255,.08)"></span><span style="flex:0 0 40px;width:40px;height:40px;border-radius:50%;background:#55A2DE;display:grid;place-items:center;box-shadow:0 0 20px rgba(85,162,222,.6)"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#07090C" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span></div>
+<a data-chat-send href="{{ waPlaca }}" target="_blank" rel="noopener" onClick="{{ checaPlaca }}" aria-label="Enviar a placa pelo WhatsApp" style="display:flex;align-items:center;gap:10px;padding:12px 14px;min-height:64px;border-top:1px solid rgba(255,255,255,.07);text-decoration:none;color:inherit;cursor:pointer"><span style="flex:1;height:40px;border-radius:999px;background:#07090C;border:1px solid rgba(255,255,255,.08)"></span><span data-send-dot aria-hidden="true" style="flex:0 0 40px;width:40px;height:40px;border-radius:50%;background:#55A2DE;display:grid;place-items:center;box-shadow:0 0 20px rgba(85,162,222,.6);min-width:44px;min-height:44px;transition:transform .2s"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#07090C" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span></a>
 </div>
 </div>
 </section>
@@ -471,7 +496,7 @@ body{padding-bottom:88px}
 <div data-r="foot-in" style="position:relative;overflow:hidden;max-width:1392px;margin:0 auto;background:#050608;border-radius:32px;padding:48px 56px 28px;border:1px solid transparent;background:linear-gradient(#050608,#050608) padding-box,linear-gradient(180deg,rgba(85,162,222,.45),rgba(255,255,255,.04) 40%) border-box">
 <div data-r="footer" style="position:relative;display:grid;grid-template-columns:1.4fr 1fr 1.2fr;gap:40px">
 <div><img src="assets/logo-completo-negativo.svg" alt="Júnior Mamede Despachante" style="height:76px;width:auto;margin-bottom:18px"><p style="margin:0;font-size:15px;line-height:1.6;color:#9AA6B4">Desde 1987 · Experiência. Respeito. Resultados.</p></div>
-<div><div style="font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#8793A1;margin-bottom:14px">Serviços</div><div style="display:flex;flex-direction:column;gap:8px;font-size:15px;font-weight:600"><a href="#servicos" style="color:#E6E9EE;text-decoration:none" style-hover="color:#8CC6F2">Licenciamento</a><a href="#servicos" style="color:#E6E9EE;text-decoration:none" style-hover="color:#8CC6F2">Transferência</a><a href="#servicos" style="color:#E6E9EE;text-decoration:none" style-hover="color:#8CC6F2">Débitos e parcelamento</a><a href="#servicos" style="color:#E6E9EE;text-decoration:none" style-hover="color:#8CC6F2">CNH</a><a href="#servicos" style="color:#E6E9EE;text-decoration:none" style-hover="color:#8CC6F2">Primeiro emplacamento</a><a href="#servicos" style="color:#E6E9EE;text-decoration:none" style-hover="color:#8CC6F2">Atualização cadastral</a></div></div>
+<div><div style="font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#8793A1;margin-bottom:14px">Serviços</div><div style="display:flex;flex-direction:column;gap:8px;font-size:15px;font-weight:600"><a href="#servicos" onClick="{{ svc.f0 }}" style="color:#E6E9EE;text-decoration:none" style-hover="color:#8CC6F2">Licenciamento</a><a href="#servicos" onClick="{{ svc.f1 }}" style="color:#E6E9EE;text-decoration:none" style-hover="color:#8CC6F2">Transferência</a><a href="#servicos" onClick="{{ svc.f2 }}" style="color:#E6E9EE;text-decoration:none" style-hover="color:#8CC6F2">Débitos e parcelamento</a><a href="#servicos" onClick="{{ svc.f3 }}" style="color:#E6E9EE;text-decoration:none" style-hover="color:#8CC6F2">CNH</a><a href="#servicos" onClick="{{ svc.f4 }}" style="color:#E6E9EE;text-decoration:none" style-hover="color:#8CC6F2">Primeiro emplacamento</a><a href="#servicos" onClick="{{ svc.f5 }}" style="color:#E6E9EE;text-decoration:none" style-hover="color:#8CC6F2">Atualização cadastral</a></div></div>
 <div><div style="font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#8793A1;margin-bottom:14px">Contato</div><div style="display:flex;flex-direction:column;gap:8px;font-size:15px;font-weight:600;line-height:1.5"><a href="{{ wa.hero }}" target="_blank" rel="noopener" style="color:#E6E9EE;text-decoration:none" style-hover="color:#8CC6F2">WhatsApp (16) 99319-4949</a><a href="tel:+551637030387" style="color:#E6E9EE;text-decoration:none" style-hover="color:#8CC6F2">(16) 3703-0387</a><span style="color:#9AA6B4">R. Luís Píres, 509 – Jardim Redentor, Franca-SP</span><a href="https://instagram.com/despachantejuniormamede" target="_blank" rel="noopener" aria-label="Instagram da Júnior Mamede Despachante (@despachantejuniormamede)" title="@despachantejuniormamede" style="margin-top:8px;width:44px;height:44px;border-radius:12px;border:1px solid rgba(255,255,255,.16);display:grid;place-items:center;color:#E6E9EE;text-decoration:none;transition:background .2s,border-color .2s" style-hover="background:#55A2DE;border-color:#55A2DE;color:#07090C"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"></circle></svg></a></div></div>
 </div>
 <p style="position:relative;margin:36px 0 0;padding-top:20px;border-top:1px solid rgba(255,255,255,.08);font-size:13px;line-height:1.6;color:#8793A1">A Júnior Mamede Despachante é um despachante particular. Não somos órgão público e não temos vínculo com o Detran-SP. Os serviços têm honorários próprios, além das taxas oficiais.</p>
@@ -479,12 +504,12 @@ body{padding-bottom:88px}
 </div>
 </footer>
 
-<a data-pill data-r="pill" href="{{ wa.hero }}" target="_blank" rel="noopener" aria-label="Falar com a Júnior Mamede Despachante no WhatsApp" style="position:fixed;left:16px;right:16px;bottom:16px;z-index:50;display:none;align-items:center;justify-content:center;gap:10px;background:#55A2DE;color:#07090C;border-radius:999px;padding:16px 24px;font-size:16px;font-weight:700;text-decoration:none;min-height:56px;box-shadow:0 0 0 1px rgba(85,162,222,.5),0 14px 40px -8px rgba(85,162,222,.8)"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#07090C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 0 1-13.4 7.8L3 21l1.3-4.4A9 9 0 1 1 21 12z"></path></svg>WhatsApp</a>
+<a data-pill data-r="pill" href="{{ wa.hero }}" target="_blank" rel="noopener" aria-label="Falar com a Júnior Mamede Despachante no WhatsApp" style="position:fixed;left:16px;right:16px;bottom:16px;max-width:420px;margin:0 auto;z-index:50;display:none;align-items:center;justify-content:center;gap:10px;background:#55A2DE;color:#07090C;border-radius:999px;padding:16px 24px;font-size:16px;font-weight:700;text-decoration:none;min-height:56px;box-shadow:0 0 0 1px rgba(85,162,222,.5),0 14px 40px -8px rgba(85,162,222,.8)"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#07090C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 0 1-13.4 7.8L3 21l1.3-4.4A9 9 0 1 1 21 12z"></path></svg>WhatsApp</a>
 </div>
 </x-dc>
 <script type="text/x-dc" data-dc-script data-props="{&quot;headline&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;default&quot;:&quot;C&quot;,&quot;options&quot;:[&quot;A&quot;,&quot;B&quot;,&quot;C&quot;,&quot;E&quot;],&quot;tsType&quot;:&quot;'A'|'B'|'C'|'E'&quot;,&quot;section&quot;:&quot;Teste de headline&quot;},&quot;animacoes&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Movimento&quot;},&quot;rolagemSuave&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Movimento&quot;}}">
 class Component extends DCLogic {
-  state = { sel: 0, placa: '', car: 0 };
+  state = { sel: 0, placa: '', car: 0, placaErro: false };
   goCar(i) { this._carPauseUntil = Date.now() + 9000; this.setState({ car: i }); }
   wa(m) { return 'https://wa.me/5516993194949?text=' + encodeURIComponent(m); }
   renderVals() {
@@ -506,7 +531,10 @@ class Component extends DCLogic {
       svc['v' + i] = on ? 'visible' : 'hidden';
       svc['a' + i] = on ? 'true' : 'false';
       svc['c' + i] = () => this.setState({ sel: i });
-      svc['e' + i] = () => { if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) this.setState({ sel: i }); };
+      // link do rodapé: abre a aba e já bloqueia o hover, porque o salto da âncora dispara mouseover antes do evento de scroll
+      svc['f' + i] = () => { this._lastScroll = Date.now(); this.setState({ sel: i }); };
+      // durante a rolagem (ex.: link do rodapé) a linha que passa sob o cursor não pode trocar a aba
+      svc['e' + i] = () => { if (Date.now() - (this._lastScroll || 0) > 300 && window.matchMedia('(hover: hover) and (pointer: fine)').matches) this.setState({ sel: i }); };
     }
     const n = 4, a = this.state.car || 0;
     const X = (typeof window !== 'undefined' && window.innerWidth < 700) ? 64 : 60;
@@ -537,7 +565,11 @@ class Component extends DCLogic {
       placa: p,
       placaView: p || 'ABC1D23',
       placaCor: p ? '#07090C' : 'rgba(7,9,12,.45)',
-      onPlaca: (e) => this.setState({ placa: String(e.target.value || '').toUpperCase().replace(/[^A-Z0-9]/g, '').slice(0, 7) }),
+      placaErro: this.state.placaErro,
+      placaInv: this.state.placaErro ? 'true' : 'false',
+      waPlaca: this.wa('Olá! Vim pelo site e quero ajuda com o documento do meu carro. Minha placa é: ' + p),
+      onPlaca: (e) => this.setState({ placa: String(e.target.value || '').toUpperCase().replace(/[^A-Z0-9]/g, '').slice(0, 7), placaErro: false }),
+      checaPlaca: (e) => { if (!this.placaOk()) { e.preventDefault(); this.placaInvalida(); } },
       enviarPlaca: (e) => this.enviarPlaca(e),
       wa: {
         hero: this.wa('Olá! Vim pelo site e quero ajuda com o documento do meu carro. Minha placa é: '),
@@ -551,17 +583,18 @@ class Component extends DCLogic {
       }
     };
   }
+  placaOk() { const p = this.state.placa; return !p || /^[A-Z]{3}[0-9][A-Z0-9][0-9]{2}$/.test(p); }
+  placaInvalida() {
+    this.setState({ placaErro: true });
+    const el = document.querySelector('[data-plate]');
+    if (el && window.gsap) window.gsap.fromTo(el, { x: -8 }, { x: 0, duration: .5, ease: 'power3.out' });
+    const inp = el && el.querySelector('input'); if (inp) inp.focus();
+  }
+  // Enter no campo: valida e aciona o link real (sem window.open, que falha nos navegadores do Instagram/Facebook)
   enviarPlaca(e) {
     e.preventDefault();
-    const form = e.currentTarget;
-    const p = this.state.placa;
-    if (p && !/^[A-Z]{3}[0-9][A-Z0-9][0-9]{2}$/.test(p)) {
-      const el = form.querySelector('[data-plate]');
-      if (el && window.gsap) window.gsap.fromTo(el, { x: -8 }, { x: 0, duration: .5, ease: 'power3.out' });
-      const inp = form.querySelector('input'); if (inp) inp.focus();
-      return;
-    }
-    window.open(this.wa('Olá! Vim pelo site e quero ajuda com o documento do meu carro. Minha placa é: ' + p), '_blank', 'noopener');
+    if (!this.placaOk()) return this.placaInvalida();
+    const a = document.querySelector('[data-plate-go]'); if (a) a.click();
   }
   componentDidMount() {
     this._t0 = performance.now();
@@ -569,13 +602,15 @@ class Component extends DCLogic {
     document.title = 'Despachante em Franca-SP desde 1987 | Júnior Mamede Despachante';
     if (!document.getElementById('jm-ld')) {
       const s = document.createElement('script'); s.type = 'application/ld+json'; s.id = 'jm-ld';
-      s.textContent = JSON.stringify({ '@context': 'https://schema.org', '@type': 'LocalBusiness', name: 'Júnior Mamede Despachante', foundingDate: '1987', telephone: '+55-16-3703-0387', address: { '@type': 'PostalAddress', streetAddress: 'R. Luís Píres, 509 - Jardim Redentor', addressLocality: 'Franca', addressRegion: 'SP', postalCode: '14409-283', addressCountry: 'BR' }, areaServed: ['Franca', 'Cristais Paulista', 'Ribeirão Corrente', 'São José da Bela Vista'], url: 'https://DOMINIO', logo: 'https://DOMINIO/logo-completo-original.svg' });
+      s.textContent = JSON.stringify({ '@context': 'https://schema.org', '@type': 'LocalBusiness', name: 'Júnior Mamede Despachante', foundingDate: '1987', telephone: '+55-16-3703-0387', address: { '@type': 'PostalAddress', streetAddress: 'R. Luís Píres, 509 - Jardim Redentor', addressLocality: 'Franca', addressRegion: 'SP', postalCode: '14409-283', addressCountry: 'BR' }, areaServed: ['Franca', 'Cristais Paulista', 'Ribeirão Corrente', 'São José da Bela Vista'] });
       document.head.appendChild(s);
     }
     // spotlight que segue o cursor nos cards
     this._spot = (e) => { const c = e.target.closest && e.target.closest('[data-spot]'); if (!c) return; const r = c.getBoundingClientRect(); c.style.setProperty('--mx', (e.clientX - r.left) + 'px'); c.style.setProperty('--my', (e.clientY - r.top) + 'px'); const g = c.querySelector(':scope > [data-glow]'); if (g) g.style.opacity = 1; };
     this._spotOut = (e) => { const c = e.target.closest && e.target.closest('[data-spot]'); if (!c || (e.relatedTarget && c.contains(e.relatedTarget))) return; const g = c.querySelector(':scope > [data-glow]'); if (g) g.style.opacity = 0; };
     document.addEventListener('mousemove', this._spot);
+    this._onScroll = () => { this._lastScroll = Date.now(); };
+    window.addEventListener('scroll', this._onScroll, { passive: true });
     document.addEventListener('mouseout', this._spotOut);
     let tries = 0;
     const wait = () => {
@@ -588,6 +623,7 @@ class Component extends DCLogic {
     clearTimeout(this._w); clearInterval(this._carT);
     document.removeEventListener('mousemove', this._spot);
     document.removeEventListener('mouseout', this._spotOut);
+    window.removeEventListener('scroll', this._onScroll);
     if (window.ScrollTrigger) window.ScrollTrigger.getAll().forEach((t) => t.kill());
     if (this._lenis) this._lenis.destroy();
     if (this._raf && window.gsap) window.gsap.ticker.remove(this._raf);
