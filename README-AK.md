@@ -2,7 +2,7 @@
 
 **Cliente:** Júnior Mamede Despachante — despachante veicular particular, desde 1987
 **Cidade:** Franca/SP (atende também Cristais Paulista, Ribeirão Corrente e São José da Bela Vista)
-**Objetivo:** levar o visitante ao WhatsApp (16) 99319-4949, com mensagem pré-preenchida por seção
+**Objetivo:** levar o visitante ao WhatsApp (16) 3703-0387, com mensagem pré-preenchida por seção
 
 Landing page única, tráfego pago. A versão no tema claro vive em repositório
 separado (https://github.com/AK-Media-LPs/junior-mamede-despachante-lp-claro).
